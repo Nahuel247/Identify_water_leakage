@@ -1,52 +1,39 @@
-# Estimación de la ubicación de fuga de agua utilizando Inteligencia artificial
+# Estimating water leak location using Artificial Intelligence
 
-Se estima que el 25% del agua potable se pierde durante su distribución y almacenamiento, por lo cual, el poder identificar la ubicación de fugas de agua a lo largo de
-una cañería es de gran interés para empresas sanitarias. Ahora, esto no es una tarea sencilla ya que las tuberías se encuentran bajo tierra.
-En este repositorio encontrarán el proceso metodológico para determinar, mediante el uso de la Inteligencia Artificial, la posición de las fugas de agua en una tubería:
+It is estimated that 25% of potable water is lost during distribution and storage, so the ability to identify the location of water leaks along a pipeline is of great interest to water companies. However, this is not a simple task as pipes are located underground. In this repository, you will find the methodological process for determining the position of water leaks in a pipeline using Artificial Intelligence:
 
-
-* Se desarrolló un ambiente simulado mediante ecuaciones diferenciales para replicar el comportamiento del agua en una tubería con fugas. Se tomaron como base los 
-estudios realizados por Guillen et al. en 2015 y Ruiz et al. en 2018 para construir y validar los resultados obtenidos en el ambiente simulado.
-
+A simulated environment was developed using differential equations to replicate the behavior of water in a leaking pipeline. Studies by Guillen et al. in 2015 and Ruiz et al. in 2018 were used as a basis to construct and validate the results obtained in the simulated environment.
 
 [![Ecuation.png](https://i.postimg.cc/rF4V7DBy/Ecuation.png)](https://postimg.cc/3dKQvxrz)
 
 [![Parameter.png](https://i.postimg.cc/KjwWnrF6/Parameter.png)](https://postimg.cc/SYLV49nd)
 
-* Se procedió a modificar el diámetro y la longitud de la tubería, el momento en que ocurre la fuga, el coeficiente de fuga y la ubicación de la fuga. Finalmente, 
-se registró la información obtenida.
+The diameter and length of the pipeline, the moment when the leak occurs, the leak coefficient and the location of the leak were modified. Finally, the information obtained was recorded.
 
 [![tuber-a.png](https://i.postimg.cc/fLk5BtHD/tuber-a.png)](https://postimg.cc/62JdQ3Jm)
 
-* A partir de las simulaciones se generaron variables artificiales relacionadas al flujo de entrada y salida del agua y se utilizó como variable respuesta la ubicación
-de la fuga, estos datos se utilizaron para entrenar un modelo de inteligencia artificial.
 
-* El modelo fue construido a través de una muestra de construcción, ajustado con una muestra de validación y testeado en una muestra test. Finalmente,
-el desempeño del modelo y el sobreajuste fue estimado a través del error porcentual. 
+From the simulations, artificial variables related to the inflow and outflow of water were generated and the location of the leak was used as the response variable. These data were used to train an artificial intelligence model.
 
-# Resultados
-A continuación, se presentan aquellos resultados más relevantes relacionados al desarrollo metodológico, la eficiencia del modelo y su implementación.
+The model was built through a construction sample, fitted with a validation sample and tested in a test sample. Finally, the performance of the model and overfitting was estimated through the percentage error.
 
-# Validación del entorno simulado.
-A continuación, se muestra el flujo de entrada y salida de agua en una cañería. La fuga de agua se activa pasado los 300 segundos y los
-parámetros fueron definidos siguiendo lo indicado en Guillen et al. en 2015 y Ruiz et al. en 2018. Los resultados se condicen con los observados en Ruiz et al. 2018.
+# Results
+Here are the most relevant results related to the methodological development, the efficiency of the model and its implementation.
+
+# Validating the simulated environment
+Below, the inflow and outflow of water in a pipeline is shown. The water leak is activated after 300 seconds and the parameters were defined as indicated in Guillen et al. in 2015 and Ruiz et al. in 2018. The results are consistent with those observed in Ruiz et al. 2018.
 
 [![validacion-simulacion.png](https://i.postimg.cc/dVB62P22/validacion-simulacion.png)](https://postimg.cc/rDD5THYs)
 
-# Optimización del modelo
-Para llegar al mejor modelo, se segmentó la data de entrenamiento en una muestra de entrenamiento, validación y testeo.
-Se utilizó el error cuadrático medio (RMSE) como métrica a optimizar. A continuación, se muestra el efecto que tiene el aumento de épocas sobre el desempeño del 
-modelo.
+# Model Optimization
+To reach the best model, the training data was segmented into a training, validation and testing sample. The mean squared error (RMSE) was used as the metric to optimize. Next, the effect of increasing the number of epochs on the performance of the model is shown.
 
 [![Optimizaci-n-del-modelo.png](https://i.postimg.cc/ryDgX4qr/Optimizaci-n-del-modelo.png)](https://postimg.cc/s1R55vQj)
 
-# Desempeño y sobreajuste del modelo
-Para evaluar el desempeño y el sobreajuste del modelo se utilizó el error absoluto medio porcentual (MAPE), es decir, el promedio porcentual del error. En la muestra de desarrollo se obtuvo un valor igual a 7.15 y en testeo de 7.6. Lo que nos indicaría que el modelo tiene un alto desempeño y un bajo sobreajuste.
- 
-Por otro lado al plotear el valor observado vs el predicho se observa un buen ajuste entorno la recta del gráfico.
+# Model Performance and Overfitting
+To evaluate the performance and generalization ability of the model, the Mean Absolute Percentage Error (MAPE) was used as a performance measure. This indicates the average percentage error between the observed values and the values predicted by the model. In the development dataset, a value of 7.15 was obtained, while in the test dataset, a value of 7.6 was obtained. This suggests that the model has high performance and a low level of overfitting.
+
+
+In addition, when plotting the observed values against the predicted values, an appropriate fit around the line on the graph is observed.
 
 [![Desempe-o-modelo.png](https://i.postimg.cc/fbfpdN6h/Desempe-o-modelo.png)](https://postimg.cc/94zL3vmx)
-
-
-
-
