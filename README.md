@@ -9,7 +9,7 @@ A simulated environment was developed using differential equations to replicate 
 
 [![Parameter.png](https://i.postimg.cc/KjwWnrF6/Parameter.png)](https://postimg.cc/SYLV49nd)
 
-The diameter and length of the pipeline, the moment when the leak occurs, the leak coefficient and the location of the leak were modified. Finally, the information obtained was recorded.
+During the multiple simulations: The diameter and length of the pipeline, the moment when the leak occurs, the leak coefficient and the location of the leak were modified. Finally, the information obtained was recorded.
 
 [![tuber-a.png](https://i.postimg.cc/fLk5BtHD/tuber-a.png)](https://postimg.cc/62JdQ3Jm)
 
