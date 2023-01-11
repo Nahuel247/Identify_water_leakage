@@ -41,7 +41,12 @@ modelo.
 [![Optimizaci-n-del-modelo.png](https://i.postimg.cc/ryDgX4qr/Optimizaci-n-del-modelo.png)](https://postimg.cc/s1R55vQj)
 
 # Desempeño y sobreajuste del modelo
-Para evaluar el desempeño del modelo y el sobreajuste se utilizó el RMSE. En la muestra de desarrollo se obtuvo un valor igual a 
+Para evaluar el desempeño y el sobreajuste del modelo se utilizó el error absoluto medio porcentual (MAPE), es decir, el promedio porcentual del error. En la muestra de desarrollo se obtuvo un valor igual a 7.15 y en testeo de 7.6. Lo que nos indicaría que el modelo tiene un alto desempeño y un bajo sobreajuste.
+ 
+Por otro lado al plotear el valor observado vs el predicho se observa un buen ajuste entorno la recta del gráfico.
+
+[![Desempe-o-modelo.png](https://i.postimg.cc/fbfpdN6h/Desempe-o-modelo.png)](https://postimg.cc/94zL3vmx)
+
 
 
 
