@@ -38,3 +38,5 @@ To evaluate the performance and generalization ability of the model, the Mean Ab
 In addition, when plotting the observed values against the predicted values, an appropriate fit around the line on the graph is observed.
 
 [![Desempe-o-modelo.png](https://i.postimg.cc/fbfpdN6h/Desempe-o-modelo.png)](https://postimg.cc/94zL3vmx)
+
+With the implementation of this model, water companies have the potential to significantly reduce water losses, resulting in cost savings and a more efficient use of resources. Overall, this project highlights the potential of AI to solve real-world problems and improve the performance of industries.
