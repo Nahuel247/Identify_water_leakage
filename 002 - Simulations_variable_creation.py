@@ -17,6 +17,7 @@ import numpy as np
 import pandas as pd
 import random
 from scipy.integrate import solve_ivp
+import matplotlib.pyplot as plt
 
 
 ##################################
@@ -113,4 +114,4 @@ for i in range(1000):
 # Saving file
 appended_data = pd.concat(appended_data)
 data = appended_data
-data.to_csv("simulaciones_fuga_agua.csv", sep=";")
+data.to_csv("simulaciones_fuga_agua.csv", sep=";", index=False)
