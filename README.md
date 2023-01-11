@@ -1,6 +1,7 @@
 # Estimating water leak location using Artificial Intelligence
 
-It is estimated that 25% of potable water is lost during distribution and storage, so the ability to identify the location of water leaks along a pipeline is of great interest to water companies. However, this is not a simple task as pipes are located underground. In this repository, you will find the methodological process for determining the position of water leaks in a pipeline using Artificial Intelligence:
+It is estimated that 25% of drinking water is lost during distribution and storage, so being able to identify the location of water leaks along a pipeline is of great interest to water utilities. Is of great interest to water utilities. Now, this is not a simple task since the pipes are located underground.
+In this repository you will find the methodological process to determine, through the use of Artificial Intelligence, the position of water leaks in a pipeline:
 
 A simulated environment was developed using differential equations to replicate the behavior of water in a leaking pipeline. Studies by Guillen et al. in 2015 and Ruiz et al. in 2018 were used as a basis to construct and validate the results obtained in the simulated environment.
 
