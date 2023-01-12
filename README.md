@@ -3,7 +3,7 @@
 It is estimated that 25% of drinking water is lost during distribution and storage, so being able to identify the location of water leaks along a pipeline is of great interest to water utilities. Now, this is not a simple task since the pipes are located underground.
 In this repository you will find the methodological process to determine, through the use of Artificial Intelligence, the position of water leaks in a pipeline:
 
-A simulated environment was developed using differential equations to replicate the behavior of water in a leaking pipeline. Studies by Guillen et al. in 2015 and Ruiz et al. in 2018 were used as a basis to construct and validate the results obtained in the simulated environment.
+A simulated environment was developed using differential equations to replicate the behavior of water in a leaking pipeline. 
 
 [![Ecuation.png](https://i.postimg.cc/rF4V7DBy/Ecuation.png)](https://postimg.cc/3dKQvxrz)
 
@@ -22,7 +22,7 @@ The model was built through a construction sample, fitted with a validation samp
 Here are the most relevant results related to the methodological development, the efficiency of the model and its implementation.
 
 # Validating the simulated environment
-Below, the inflow and outflow of water in a pipeline is shown. The water leak is activated after 300 seconds and the parameters were defined as indicated in Guillen et al. in 2015 and Ruiz et al. in 2018. The results are consistent with those observed in Ruiz et al. 2018.
+Below, the inflow and outflow of water in a pipeline is shown. The water leak is activated after 300 seconds and the parameters were defined as indicated in papers.
 
 [![validacion-simulacion.png](https://i.postimg.cc/dVB62P22/validacion-simulacion.png)](https://postimg.cc/rDD5THYs)
 
